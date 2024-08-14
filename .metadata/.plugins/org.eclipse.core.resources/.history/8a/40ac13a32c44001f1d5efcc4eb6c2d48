@@ -1,0 +1,15 @@
+
+public class classes5 {
+	//@Test
+	String data[]=getXMLData("BookingDetails_Vaild.xml");
+	setformValuesObj.setFirstName(data[0]);
+	totalCost=getformValuesObj.getCost();
+	setformValuesObj.confirmBooking();
+	alertMsg=getformValuesobj.getAlertMessage();
+	System.out.println(alertMsg);
+	@AfterClass
+	driver.close();
+	<class>
+	<class name="com.selenium.tests.TestValidFormValues"/></class>
+
+}

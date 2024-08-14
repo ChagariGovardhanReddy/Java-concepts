@@ -1,0 +1,13 @@
+package govardhanreddy.apitraining;
+
+public class Basic {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+ //validate if Add place API is working as Expected
+		//given- all input details
+		//when -submit the Api
+		//then-validate the response
+	}
+
+}

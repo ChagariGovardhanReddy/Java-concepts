@@ -1,0 +1,10 @@
+package DataDriven.DDFrameWork;
+
+public class WritingDataIntoExcel {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

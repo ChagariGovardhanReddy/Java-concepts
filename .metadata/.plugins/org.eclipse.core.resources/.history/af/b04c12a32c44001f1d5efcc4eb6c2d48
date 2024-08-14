@@ -1,0 +1,35 @@
+
+public class classes3 {
+	//setform
+	driver.findElement(By.id("fName")).sendKeys(firstName);
+	driver.findElement(By.id("lName")).sendKeys(lastName);
+	driver.findElement(By.id("phno")).sendKeys(phoneNumber);
+	driver.findElement(By.id("email")).sendKeys(email);
+}
+//checkin out 
+JavascriptExecutor js= (JavascriptExecutor)driver;
+js.executeScript("document.getElementById('checkindate').setAttribute('value,'"+checkInDate+"')");
+JavascriptExecutror js=(JavascriptExecutor)driver;
+js.Executor=("document.findElementById('checkoutdate').setAttribute('value''+"checkoutDate"')");
+}
+//set room type person childern
+Select s=new Select(driver.findElement(By.id("room_type")));
+s.selectByVisibleText(roomType);
+Select t=new Select(driver.findElement(By.id("room_number")));
+t.selectByVisibleText(numberOfRooms);
+Select u=new Select(driver.findElement(By.id("person_number")));
+u.selectByVisibleText(personCount);
+Select v=new Select(driver.findElement(By.id("child_number")));
+v.selectByVisibleText(childCount);
+Select w=new Select(driver.findElement(By.id("res_facilities")));
+w.selectByVisibleText(resFacility);
+}
+//confirm booking
+driver.findElement(By.id("submit")).click();
+
+
+
+
+
+
+}

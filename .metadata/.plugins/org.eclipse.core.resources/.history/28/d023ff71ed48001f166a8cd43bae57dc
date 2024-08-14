@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="test.CaseStudy10"/>
+      <class name="test.CaseStudy11"/>
+      <class name="casestudy15.TestNGDataProvider"/>
+      <class name="test.CaseStudy7"/>
+      <class name="test.CaseStudy8"/>
+      <class name="test.CaseStudy9"/>
+      <class name="test.CaseStudy3"/>
+      <class name="test.CaseStudy4"/>
+      <class name="test.CaseStudy5"/>
+      <class name="test.CaseStudy6"/>
+      <class name="test.CaseStudy2"/>
+      <class name="test.CaseStudy14"/>
+      <class name="test.CaseStudy15"/>
+      <class name="seleniumCaseStudies.OnlineMobileSearch"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

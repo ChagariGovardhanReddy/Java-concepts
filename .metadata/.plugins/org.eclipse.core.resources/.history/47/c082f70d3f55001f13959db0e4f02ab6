@@ -1,0 +1,36 @@
+package govardhanreddy.apitraining;
+
+import io.restassured.RestAssured;
+import io.restassured.path.json.JsonPath;
+
+import static io.restassured.RestAssured.*;
+import static org.harmcast;
+public class Basic {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+ //validate if Add place API is working as Expected
+		//given- all input details
+		//when -submit the Api-resource,http method
+		//then-validate the response
+		RestAssured.baseURI="https://rahulshettyacademy.com";
+	String response=	given().log().all().queryParam("key", "qaclick123").header("Content-Type","application/jason")
+		.body("").when().post("mpas/api/place/add/jason")
+		.then().assertThat().statusCode(200).body("scope", equalTo("APP"));
+	  .header("server","Apache/2.4.18(Ubuntu)").extract().response().asString();
+	  //body(payload.addplace())
+	  System.out.println(response);
+	  JsonPath js=new JsonPath(response);//for parsing json
+	  String placeId=js.get("place_id");
+	  System.out.println(place_id);
+	  //Add place->update place with newAddress->Get place to validate if New address is present in response
+	  //Update place
+	  given().log().all().queryparam("key","qaclick123").header("Content-Type","applicatioin/json");
+	  .body("").
+	  .when().put("maps/api/place/update/json")
+	  .then.assertThat().log().all().statusCode(200).body("msg",equalTo("Address sucessfully updated"))
+	  //when we send a placeid to update.In the body we give like this  ""+placeId+"\"
+	//Get api
+	}
+
+}

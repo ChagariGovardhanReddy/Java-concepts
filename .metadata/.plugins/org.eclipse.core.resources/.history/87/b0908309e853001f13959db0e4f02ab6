@@ -1,0 +1,19 @@
+package polymorphism;
+
+public class MethodOverloading {
+   // method  name should be same but parameters should be different
+	//it can have different type of parameters
+	//Number of parameters should be different
+	//order of parameters should be different
+	void n1(int a,int b) {
+		
+	}
+	void n1(int a,int b,int c) {
+		
+	}
+	void n1(int a, float b) {
+		
+	}
+	void n1(int b,int a)
+}
+	

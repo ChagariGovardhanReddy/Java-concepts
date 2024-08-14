@@ -1,0 +1,18 @@
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+
+public class class4 {
+DocumentBuilderFactory dbf=DocumentBuildFactory.newInstance();
+DocumentBuilder db =dbf.newDocumentBuilder();
+Document doc =db.parse(fileName);
+String [] xmlData=new String[11];
+}
+//store xml data
+xmlData[0]=doc.getElementsByTagName("FirstName").item(0).getTextContent();
+return xmlData;}
+driver=DriverSetup.getDriver();
+driver.get(baseUrl);
+return driver;}
+//xmlutils
+String data[]=XMLUtils.readFile(fileName);
+return data;

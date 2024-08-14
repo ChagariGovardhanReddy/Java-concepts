@@ -1,0 +1,20 @@
+package govardhanreddy.apitraining;
+
+import io.restassured.RestAssured;
+import static io.restassured.RestAssured.*;
+
+public class Basic {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+ //validate if Add place API is working as Expected
+		//given- all input details
+		//when -submit the Api-resource,http method
+		//then-validate the response
+		RestAssured.baseURI="https://rahulshettyacademy.com";
+		given().log().all().queryParam("key", "qaclick123").header("Content-Type","application/jason")
+		.body("").when().post("mpas/api/place/add/jason")
+		.then().log().all().assertThat().statusCode(200);
+	}
+
+}

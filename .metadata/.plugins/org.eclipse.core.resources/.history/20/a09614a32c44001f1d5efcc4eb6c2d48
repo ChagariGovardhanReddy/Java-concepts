@@ -1,0 +1,11 @@
+
+public class classess2 {
+	//getFormValues
+	//getcost
+	String tCost=driver.findElement(By.id("result")).getText();
+	return tCost;
+	//alertmessage
+	String aMessage=driver.switchTo().alert().getText();
+	return aMessage;
+
+}
